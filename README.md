@@ -14,6 +14,7 @@
                  ‘android:layout_height="match_parent"‘<br />
                   ‘/>‘<br />
                   
+## 设置数据：                 
  mImageView = (CustomImageView)findViewById(R.id.imageview1);
         mImageView.setInterval(60);//切换一次的时间
         mImageView.setLoop(true);//是否循环切换
