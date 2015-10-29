@@ -7,11 +7,12 @@
    
          
 ## 使用：
-          <com.dalong.demo.view.CustomImageView  <br />
-                 android:id="@+id/imageview1" <br />
-                 android:layout_width="match_parent"<br />
-                 android:layout_height="match_parent"<br />
-                  /><br />
+          
+         ‘<com.dalong.demo.view.CustomImageView‘  <br />
+                 ‘android:id="@+id/imageview1"‘ <br />
+                ‘ android:layout_width="match_parent"‘<br />
+                 ‘android:layout_height="match_parent"‘<br />
+                  ‘/>‘<br />
                   
  mImageView = (CustomImageView)findViewById(R.id.imageview1);
         mImageView.setInterval(60);//切换一次的时间
