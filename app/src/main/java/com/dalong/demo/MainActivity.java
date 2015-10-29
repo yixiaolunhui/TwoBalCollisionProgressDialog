@@ -13,7 +13,7 @@ import com.dalong.demo.view.CustomImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CustomImageView faImageView1;
+    private CustomImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,42 +36,42 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
 
-        faImageView1 = (CustomImageView)findViewById(R.id.imageview1);
-        faImageView1.setInterval(60);//切换一次的时间
-        faImageView1.setLoop(true);//是否循环切换
-        faImageView1.addImageFrame(R.drawable.loading3_01);
-        faImageView1.addImageFrame(R.drawable.loading3_02);
-        faImageView1.addImageFrame(R.drawable.loading3_03);
-        faImageView1.addImageFrame(R.drawable.loading3_04);
-        faImageView1.addImageFrame(R.drawable.loading3_05);
-        faImageView1.addImageFrame(R.drawable.loading3_06);
-        faImageView1.addImageFrame(R.drawable.loading3_07);
-        faImageView1.addImageFrame(R.drawable.loading3_08);
-        faImageView1.addImageFrame(R.drawable.loading3_09);
-        faImageView1.addImageFrame(R.drawable.loading3_10);
-        faImageView1.addImageFrame(R.drawable.loading3_11);
-        faImageView1.addImageFrame(R.drawable.loading3_12);
-        faImageView1.addImageFrame(R.drawable.loading3_13);
-        faImageView1.addImageFrame(R.drawable.loading3_14);
-        faImageView1.addImageFrame(R.drawable.loading3_15);
-        faImageView1.addImageFrame(R.drawable.loading3_16);
-        faImageView1.addImageFrame(R.drawable.loading3_17);
-        faImageView1.addImageFrame(R.drawable.loading3_18);
-        faImageView1.addImageFrame(R.drawable.loading3_19);
-        faImageView1.addImageFrame(R.drawable.loading3_20);
-        faImageView1.addImageFrame(R.drawable.loading3_21);
+        mImageView = (CustomImageView)findViewById(R.id.imageview1);
+        mImageView.setInterval(60);//切换一次的时间
+        mImageView.setLoop(true);//是否循环切换
+        mImageView.addImageFrame(R.drawable.loading3_01);
+        mImageView.addImageFrame(R.drawable.loading3_02);
+        mImageView.addImageFrame(R.drawable.loading3_03);
+        mImageView.addImageFrame(R.drawable.loading3_04);
+        mImageView.addImageFrame(R.drawable.loading3_05);
+        mImageView.addImageFrame(R.drawable.loading3_06);
+        mImageView.addImageFrame(R.drawable.loading3_07);
+        mImageView.addImageFrame(R.drawable.loading3_08);
+        mImageView.addImageFrame(R.drawable.loading3_09);
+        mImageView.addImageFrame(R.drawable.loading3_10);
+        mImageView.addImageFrame(R.drawable.loading3_11);
+        mImageView.addImageFrame(R.drawable.loading3_12);
+        mImageView.addImageFrame(R.drawable.loading3_13);
+        mImageView.addImageFrame(R.drawable.loading3_14);
+        mImageView.addImageFrame(R.drawable.loading3_15);
+        mImageView.addImageFrame(R.drawable.loading3_16);
+        mImageView.addImageFrame(R.drawable.loading3_17);
+        mImageView.addImageFrame(R.drawable.loading3_18);
+        mImageView.addImageFrame(R.drawable.loading3_19);
+        mImageView.addImageFrame(R.drawable.loading3_20);
+        mImageView.addImageFrame(R.drawable.loading3_21);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        faImageView1.startAnimation();
+        mImageView.startAnimation();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        faImageView1.stopAnimaion();
+        mImageView.stopAnimaion();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

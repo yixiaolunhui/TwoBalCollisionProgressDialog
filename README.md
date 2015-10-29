@@ -1,14 +1,18 @@
 # TwoBalCollisionProgressDialog
 仿人人网下拉刷新的加载动画
-使用：
- <com.dalong.demo.view.CustomImageView
-        android:id="@+id/imageview1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+
          
+## 效果图
+  ![image](https://github.com/dalong982242260/LoopRotarySwitch/blob/master/img/dalong.gif)       
+   
          
-         
+## 使用：
+          <com.dalong.demo.view.CustomImageView  <br />
+                 android:id="@+id/imageview1" <br />
+                 android:layout_width="match_parent"<br />
+                 android:layout_height="match_parent"<br />
+                  /><br />
+                  
  mImageView = (CustomImageView)findViewById(R.id.imageview1);
         mImageView.setInterval(60);//切换一次的时间
         mImageView.setLoop(true);//是否循环切换
